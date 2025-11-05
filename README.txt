@@ -1,10 +1,16 @@
 # 🧠 EnrichMinion QA Assignment  
 **Comprehensive QA deliverable including manual test cases, bug reports, and automation (Playwright + Postman)**  
 
-[![Made with Playwright](https://img.shields.io/badge/Tested%20with-Playwright-45ba4b?logo=playwright&logoColor=white)](https://playwright.dev)
-[![Runs on Postman](https://img.shields.io/badge/API%20Tests-Postman-orange?logo=postman)](https://www.postman.com)
-[![Language](https://img.shields.io/badge/TypeScript-Ready-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![QA Engineer](https://img.shields.io/badge/Author-QA%20Engineer%20✔️-purple)]()
+<p align="left">
+  <img src="https://playwright.dev/img/playwright-logo.svg" alt="Playwright" width="90" height="90"/>
+  &nbsp;&nbsp;
+  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" width="80" height="80"/>
+  &nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png" alt="TypeScript" width="80" height="80"/>
+  &nbsp;&nbsp;
+  <img src="https://cdn-icons-png.flaticon.com/512/3798/3798231.png" alt="QA Engineer" width="80" height="80"/>
+</p>
+
 
 ---
 
