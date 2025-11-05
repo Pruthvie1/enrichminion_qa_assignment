@@ -1,24 +1,14 @@
-# 🧠 EnrichMinion QA Assignment  
-**Comprehensive QA deliverable including manual test cases, bug reports, and automation (Playwright + Postman)**  
-
-<p align="center">
-  <img src="https://playwright.dev/img/playwright-logo.svg" alt="Playwright Logo" width="90" height="90"/>
-  &nbsp;&nbsp;
-  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman Logo" width="80" height="80"/>
-  &nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png" alt="TypeScript Logo" width="80" height="80"/>
-  &nbsp;&nbsp;
-  <img src="https://cdn-icons-png.flaticon.com/512/3798/3798231.png" alt="QA Engineer Icon" width="80" height="80"/>
-</p>
+EnrichMinion QA Assignment  
+Comprehensive QA deliverable including manual test cases, bug reports, and automation (Playwright + Postman)
 
 
 
 ---
 
-## 📋 Project Overview
+Project Overview
 This repository contains the QA deliverables for **EnrichMinion**, a web app providing data enrichment and verification services.
 
-**Scope tested:**
+Scope tested:
 - User Signup & Login (Email + Google OAuth)
 - Forgot Password flow
 - Enrichment module (email/phone/linkedin)
@@ -27,36 +17,36 @@ This repository contains the QA deliverables for **EnrichMinion**, a web app pro
 
 ---
 
-## 🧱 Deliverables
+Deliverables
 
 | File / Folder | Description |
 |----------------|-------------|
-| 🧾 **bug_report.md** | Contains detailed bug documentation (3 verified issues with RCA) |
-| 📊 **ui_test_cases.xlsx** | Manual UI test cases (Signup, Login, Enrichment, Verification) |
-| 🧩 **api_test_cases.xlsx** | API test cases (authentication, enrichment, validation) |
-| 📸 **screenshots/** | Evidence of the discovered bugs (desktop UI captures) |
-| 🤖 **automation_suite/** | Playwright (TypeScript) + Postman automation suite |
-| 📘 **README.txt** | Short project info for offline viewing |
+| bug_report.md | Contains detailed bug documentation (3 verified issues with RCA) |
+| ui_test_cases.xlsx | Manual UI test cases (Signup, Login, Enrichment, Verification) |
+| api_test_cases.xlsx | API test cases (authentication, enrichment, validation) |
+| screenshots/ | Evidence of the discovered bugs (desktop UI captures) |
+| automation_suite/ | Playwright (TypeScript) + Postman automation suite |
+| README.txt | Short project info for offline viewing |
 
 ---
 
-## 🐞 Verified Bugs (RCA Included)
+Verified Bugs (RCA Included)
 | ID | Title | Type | Root Cause |
 |----|--------|------|-------------|
-| **BUG-001** | Signup: “Email rate limit exceeded” | Backend | Email provider rate-limiting issue |
-| **BUG-002** | Google Sign-in: “Unsupported provider” | Backend + Frontend | Provider disabled in Supabase; UI shows raw JSON error |
-| **BUG-003** | Forgot Password: success message, no email sent | Backend | Email queue or delivery failure |
+| BUG-001 | Signup: “Email rate limit exceeded” | Backend | Email provider rate-limiting issue |
+| BUG-002 | Google Sign-in: “Unsupported provider” | Backend + Frontend | Provider disabled in Supabase; UI shows raw JSON error |
+| BUG-003 | Forgot Password: success message, no email sent | Backend | Email queue or delivery failure |
 
-📎 *Screenshots are attached in `/screenshots/`.*
+Screenshots are attached in `/screenshots/`.
 
 ---
 
-## ⚙️ Automation Suite (Playwright + Postman)
+Automation Suite (Playwright + Postman)
 
-### 🧠 **Playwright (TypeScript)**  
+Playwright (TypeScript)  
 Located in: `automation_suite/tests/`
 
-#### Included Tests
+Included Tests
 | Test | Description |
 |------|--------------|
 | `signup.spec.ts` | Valid signup flow (email registration) |
@@ -64,7 +54,7 @@ Located in: `automation_suite/tests/`
 | `google.spec.ts` | Google sign-in negative case (provider disabled) |
 | `forgot-password.spec.ts` | Password reset success message validation |
 
-#### Run Locally
+Run Locally
 ```bash
 # Install dependencies
 npm install
@@ -72,24 +62,12 @@ npx playwright install
 
 # Run all tests headless
 npm test
-
-# Run with browser UI
-npm run test:headed
-```
-
-Environment variables:
-```bash
-BASE_URL=https://enrichminion.vercel.app
-TEST_EMAIL=your_registered_email@example.com
-TEST_PASSWORD=your_password
-```
-
 ---
 
-### 🔗 **Postman API Tests**
+Postman API Tests
 Located at: `automation_suite/automation/postman_collection.json`
 
-#### Included Endpoints
+Included Endpoints
 - `POST /api/auth/signup`
 - `POST /api/auth/login`
 - `GET /api/auth/providers`
@@ -101,26 +79,26 @@ Each includes `pm.test()` assertions for:
 - JSON structure
 - Negative validation
 
-✅ *Runnable with Postman GUI or Newman CLI.*
+Runnable with Postman GUI or Newman CLI.
 
 ---
 
-## 🧮 Evaluation Highlights
-- ✅ **Manual Test Design** – Comprehensive UI + API coverage  
-- ✅ **Root Cause Analysis** – Clear frontend vs backend attribution  
-- ✅ **Automation Initiative** – Fully runnable TypeScript test suite  
-- ✅ **Reporting Quality** – Structured, reproducible, professional format  
+Evaluation Highlights
+- Manual Test Design – Comprehensive UI + API coverage  
+- Root Cause Analysis – Clear frontend vs backend attribution  
+- Automation Initiative – Fully runnable TypeScript test suite  
+- Reporting Quality – Structured, reproducible, professional format  
 
 ---
 
-## 👨‍💻 Author
-**Pruthviraj Patil- QA Engineer**
+Author
+Pruthviraj Patil- QA Engineer
 
-💼 Skilled in: Manual Testing • API Testing • Playwright • Postman • Root Cause Analysis • Reporting  
+Skilled in: Manual Testing • API Testing • Playwright • Postman • Root Cause Analysis • Reporting  
 
 ---
 
-## 🏁 How to Use
+How to Use
 1. Clone this repo  
    ```bash
    git clone https://github.com/<your-username>/enrichminion_qa_assignment.git
@@ -137,9 +115,9 @@ Each includes `pm.test()` assertions for:
 
 ---
 
-## ⭐ Acknowledgments
+Acknowledgments
 Special thanks to **Brainholics QA Team** for providing the EnrichMinion QA assignment challenge.
 
 ---
 
-> _“Good testers don’t just find bugs — they explain them, reproduce them, and understand where they live.”_ 🧩
+> _“Good testers don’t just find bugs — they explain them, reproduce them, and understand where they live.”_
