@@ -27,9 +27,9 @@ No verification email is received.
 
 Evidence:
 - Console log: shows 429 response from Supabase API
-- - Screenshot:  
+- Screenshot:  
 
-<img src="./screenshots/signup_email_rate_limit.png" alt="Signup Rate Limit Error" width="45%">
+<img src="./screenshots/signup_email_rate_limit.png" alt="Signup Rate Limit Error" width="50%">
 
 Root Cause Analysis:
 Backend Issue
@@ -57,8 +57,10 @@ A raw JSON error appears on screen:
 {"code":400,"error_code":"validation_failed","msg":"Unsupported provider: provider is not enabled"}
 
 Evidence:
-- Screenshot: screenshots/google_signin_error.png
 - DevTools Network tab shows /auth/v1/token 400 response
+- Screenshot:
+
+<img src="./screenshots/google_signin_error.png" alt="Google Sign-in Error" width="50%">
 
 Root Cause Analysis:
 Backend + Frontend (combined)
@@ -88,8 +90,10 @@ System displays:
 But no email is received after multiple attempts.
 
 Evidence:
-- Screenshot: screenshots/password_reset_no_email.png
 - DevTools: /auth/v1/recover returns 200 OK but no subsequent email received.
+- Screenshot:
+
+<img src="./screenshots/password_reset_no_email.png" alt="Google Sign-in Error" width="50%">
 
 Root Cause Analysis:
 Backend Issue
