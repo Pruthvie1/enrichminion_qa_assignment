@@ -26,8 +26,8 @@ even on first signup attempt.
 No verification email is received.
 
 Evidence:
-- Screenshot: screenshots/signup_email_rate_limit.png
 - Console log: shows 429 response from Supabase API
+- ![Signup Rate Limit Error](./screenshots/signup_email_rate_limit.png)
 
 Root Cause Analysis:
 Backend Issue
